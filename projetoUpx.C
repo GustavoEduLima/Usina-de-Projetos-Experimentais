@@ -9,15 +9,15 @@ const char* password = "senha do Wifi;
 
 // +international_country_code + phone number
 // Brasil +55, example: +5511988888888
-String phoneNumber = "+5515996537828";
-String apiKey = "L8Mv7MV5o2Cf";
+String phoneNumber = "+5512345678";
+String apiKey = "Chave API";
 
 void sendMessage(String message) {
   // Converte a mensagem para URL-encoded
   message.replace("&", "%26");
   message.replace(" ", "%20");
   // Monta a URL completa
-  String url = "https://api.callmebot.com/whatsapp.php?phone=" + phoneNumber + "&apikey=" + apiKey + "&text=" + message;
+  String url = "https://link.da.api.com" + phoneNumber + "&apikey=" + apiKey + "&text=" + message;
 
   HTTPClient http;
   WiFiClient client;
